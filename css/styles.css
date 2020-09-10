@@ -1,0 +1,181 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image : url('../img/fundo3.jpg');
+  background-size: auto 100vh; /* largura e altura*/
+  background-repeat: no-repeat;
+ /* background-attachment: fixed; */
+ /*para tamanho poderiamos utilizar o vh q é o ViewportHeight e podemor usar para largura o vw, viewportWidth, ambos vão trabalhar com o tamanho da tela em uso.*/
+  background-size: cover;
+  font-size: 12px;
+}
+
+/* Se a tela tiver pelo menos 400px, vai carregar estes estilos*/
+@media (min-width: 400px) { /* os parenteses serve para colocar a condição dentro do if*/
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint*/
+@media (min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+header{
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu{
+  background-color: rgb(25, 18, 122);
+  opacity: 0.6;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a{
+  display: block;
+  text-decoration: none; /*tira o sublinhado que ja*/
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+	text-align: center;
+}
+.menu li{
+   list-style: none;
+}
+
+.menu a{
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+}
+
+a{
+   color: white;
+   text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  background-color: rgb(248, 64, 217);
+
+} 
+
+.site-subtitle, 
+.site-title{ /*usado para alterar mais de um grupo*/
+  color:white;
+  font-family: monospace;
+  text-align: center;
+
+}
+
+.site-title{
+  font-size: 4em;
+}
+
+.site-subtitle{
+  font-style: italic;
+  font-family: Courier, monospace;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 300px;
+  border-radius: 6px;
+  margin: 30px;
+}
+
+
+.portfolio{
+  font-family: monospace;
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+ 
+.portfolio2{
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio3{
+  display: flex;
+  justify-content: center;
+}
+/*figure{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} */
+figcaption{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*
+body {
+    background-image:url('../img/gif1.gif');
+    background-size:  100vh;
+    height: 100vh;
+    
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li{
+     list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', cursive;
+    background-color: #BA55D3;
+    opacity: 0.6;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  a:hover{
+      text-decoration: underline;
+      background-color: rgba(23, 181, 243, 0.7);
+  }
+  
+   
+  .site-title{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: verdana;
+  }
+  
+  .site-subtitle{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
+    font-family: verdana;
+    font-size: medium;
+  }
+*/
